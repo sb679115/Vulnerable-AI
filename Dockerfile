@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install the required Python packages
-RUN pip install --no-cache-dir flask transformers
+RUN pip install --no-cache-dir flask transformers torch
 
 # Expose the port Flask will run on
 EXPOSE 5002
